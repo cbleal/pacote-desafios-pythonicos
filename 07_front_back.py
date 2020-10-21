@@ -12,7 +12,16 @@ a-frente + b-frente + a-trás + b-trás
 """
 def front_back(a, b):
     # +++ SUA SOLUÇÃO +++
-    return
+    len_a = len(a) // 2 + len(a) % 2
+    len_b = len(b) // 2 + len(b) % 2
+
+    front_a = a[:len_a]
+    back_a = a[len_a:]
+    front_b = b[:len_b]
+    back_b = b[len_b:]
+
+    # return front_a + front_b + back_a + back_b
+    return ''.join([front_a, front_b, back_a, back_b])
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
