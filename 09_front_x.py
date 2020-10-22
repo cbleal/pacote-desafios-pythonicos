@@ -13,7 +13,12 @@ antes de combina-las.
 
 def front_x(words):
     # +++ SUA SOLUÇÃO +++
-    return
+    words.sort()
+    s = words
+    list_x = [lx for lx in s if lx.startswith('x')]
+    list_n = [ln for ln in s if not ln.startswith('x')]
+    list_all = list_x + list_n
+    return list_all
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
